@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- proyecto de encriptador de texto-->
+<!-- se debe diseñar un codigo q permita convertir una palabra en un codigo  encriptado-->
+<html lang="es">
+    
+    <head>
+
+        <meta charset="UTF-8"> 
+        <title>Encriptador de texto Alura</title>
+        <link rel="stylesheet" href="estilos.css">
+        <!--AGREGADO se carga el modulo para tipo de letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+            
+    </head>
+
+    <body>
+        <header>
+            <!--Ubicacion de Logo-->
+            <!-- AGREGADO la class logo-->
+            <img class="logo" src="Logo.png" alt="el logo de alura">
+            
+        </header>
+                
+        <main>
+            
+            <section class="section1">
+                <!--Aqui se define el marco para ingresar el texto y los botones-->
+                <!--Text area .. area donde se ingresara el texto -->
+                <textarea class="area" placeholder="Ingrese el texto aqui"></textarea>
+                <!-- AGREGADO aqui va el titulo de minusculas -->
+                <div>
+                    <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+                </div>
+                <!--Input type buttom ...botones encriptar desencriptar -->
+                <div class="contenedor-botones">
+                    <input type="button" class="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar">
+                </div>
+                
+
+            </section>
+
+            <section class="section2">
+                <!-- SECTION 2  area de muñeco y donde se genera el texto -->
+                <div class="contenedor-muneico">
+                    <img src="Muñeco.png" alt="muñeco de alura">
+
+                </div>
+                <!-- msg nro 1 -->
+                <div class="contenedor-h3">
+                    <h3>Ningun msg fue encontrado</h3>
+                </div>
+                <!-- msg nro 2 -->
+                <div class="contenedor-parrafo">
+                    <p>Ingresa el texto q deseas encriptar o desencriptar</p>
+                
+                </div>
+                <!-- area donde aparece la palabra convertida -->
+                <div class="contenedor-resultado">
+                    <h3>Mensaje encriptado:</h3>
+                    <p class ="texto-resultado"></p>
+                </div>
+                <!-- BOTON COPIAR -->
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" value="Copiar">
+
+                </div>
+                
+            </section>
+
+        </main>  
+
+        <footer>
+            <p> Alura , todos los derechos reservados </p>
+        </footer>  
+        
+        <script src="archivo.js"></script>
+    </body>
+</html>

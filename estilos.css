@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*AGREGADO se adiciono parte del estilo de letra */
+    font-family: 'Inter';
+
+}
+/*AGREGADO logo de Alura*/
+.logo{
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 8%;
+}
+body{
+    /*background-color: #f1f1f1;*/
+    /*AGREGADO se cambio el color sugerido*/
+    background-color: #F3F5FC;
+}
+/*cabecera*/
+header{
+    width: 100%;
+    height: 50px;
+   /* background-color: aquamarine;*/
+}
+/*cuerpo principal*/
+main{
+    width: 100%;
+    height: 558px;
+   /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    }
+/*es el espacio totla formado por el textarea,botones,muñeco y msgs */
+section{
+    width: 45%;
+    height: 100%;
+   /* background-color: darkgreen ;*/
+}
+/**section1:textarea y botones*/
+.section1{
+    width: 70%;
+}
+/*defino area de texto para escribir*/
+.area{
+    width: 80%;
+    height: 55%;
+    /*AGREGADO border en blanco en el primer cuadro*/
+    border: none;
+    /*AGREGADO letras en color azul*/
+    color: blue;
+    /*AGREGADO solo permite minusculas*/
+    text-transform: lowercase;
+    display: block;/*permite ocupar el ancho del contenedor*/
+    margin: auto;/*le asigna espacio en los costados para centrarlo*/
+    margin-top: 20px;/*le asigna un espacio en la parte superior*/
+    resize: none;/* de esta manera ya no permitre q el marco se agrande automaticamente*/
+    font-size: 25px;
+}
+/*AGREGADO se le cambia de color al texto ingresado */
+::placeholder{
+    color: blue;
+}
+/*AGREGADO se elimina el borde del texto ingresado*/
+.area:focus{
+    outline: none;
+}
+/*AGREGADO se le agrego el parrafo de minusculas*/
+/*AGREGADO se adiciono opacity*/
+.informacion{
+    color:#495057;
+    padding-top: 30px;
+    font-size: 14px;
+    margin-left: 120px;
+    opacity: 0.5;
+}
+/*AGREGADO se le agrego detalles de boton encriptar*/
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 23px;
+
+}
+/*AGREGADO se le agrego detalles de boton desencriptar*/
+.btn-desencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 23px; 
+
+
+
+}
+
+.btn-encriptar,.btn-desencriptar{
+    width: 25%;
+    height: 40px;
+}
+.contenedor-botones{
+    text-align: center;
+    margin-top: 50px;
+}
+/*muneico,area donde aparece texto convertido y area de msg*/
+.section2{
+    width: 25%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.contenedor-muneico{
+    width: 100%;
+    height: 60%;
+    padding-top: 28px;
+    /*box-sizing: border-box;*/
+}
+.contenedor-h3{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.contenedor-parrafo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.contenedor-resultado{
+    width: 100%;
+    height: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.contenedor-copiar{
+    width: 100%;
+    height: 20%;
+}
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor:pointer;
+    width: 280px;
+    height: 45px;
+    /*display: block;*/
+    margin-left:35px;
+    margin-top: 70px;
+    font-size: 23px;
+    position: absolute;
+}
+/* pie de pagina*/
+footer{
+    width: 100%;
+    height: 50px;
+   /* background-color: darkcyan;*/
+    text-align: center;
+}
+/* funcion  ocultar , solo para borrar el area*/
+.ocultar{
+    display: none;
+}
