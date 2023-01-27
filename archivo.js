@@ -15,7 +15,7 @@ function encriptar() {
     ocultarAdelante();
     var area = recuperarTexto();
     resultado.textContent = encriptarTexto(area); 
-    area=""; 
+    
 }
 
 function desencriptar(){
