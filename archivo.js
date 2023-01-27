@@ -1,3 +1,5 @@
+//archivo en js . aqui se define la logica //
+//asocia las class en cada variable para su asignacion a la funcion establecida//
 var botonEncriptar= document.querySelector(".btn-encriptar");
 var botonDesencriptar = document.querySelector(".btn-desencriptar");
 var botonCopiar = document.querySelector(".btn-copiar");
@@ -6,18 +8,19 @@ var h3 = document.querySelector(".contenedor-h3");
 var parrafo = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
 
-
+// aqui se define la funcion a la accion de cada boton //
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 botonCopiar.onclick = copiar;
 
+// funcion encriptar/
 function encriptar() {
     ocultarAdelante();
     var area = recuperarTexto();
     resultado.textContent = encriptarTexto(area); 
     
 }
-
+// funcion desencriptar//
 function desencriptar(){
 
     ocultarAdelante();
@@ -25,6 +28,7 @@ function desencriptar(){
     resultado.textContent = desencriptarTexto(area);  
 
 }
+//funcion copiar//
 function copiar(){
     
     var contenido = document.querySelector(".texto-resultado").innerText;
@@ -33,18 +37,20 @@ function copiar(){
     navigator.clipboard.writeText(contenido);
     alert("se copia el texto ");
 }
-
+//funcion recuperar texto//
+// toma el texto ingresado y lo asigna a variable area //
 function recuperarTexto(){
     var area = document.querySelector(".area");
     return area.value;
 }
-
+//funcion ocultarAdelante , esconde el muñeco y las demas areas //
+//para q le permitan q aprezca el texto ingresado y convertido//
 function ocultarAdelante(){
     muneico.classList.add("ocultar");
     h3.classList.add("ocultar");
     parrafo.classList.add("ocultar");
 }
-
+//funcion encriptarTexto ..cambia las vocales a las cadenas definidas//
 function encriptarTexto(mensaje){
     var texto="";
     texto = mensaje;
@@ -52,7 +58,7 @@ function encriptarTexto(mensaje){
    
    
     for (var i=0; i < texto.length; i=i+1){
-        
+        // letra por letra hace la busqueda de las vocales//
         if(texto[i] =="a"){
             textoFinal = textoFinal + "ai";
         } 
@@ -83,7 +89,7 @@ function encriptarTexto(mensaje){
     return textoFinal;
 
 }
-
+//function desencriptarTexto ...texto convertido lo pasa a vocales //
 function desencriptarTexto(mensaje){
     var texto="";
     texto = mensaje;
@@ -91,7 +97,8 @@ function desencriptarTexto(mensaje){
    
    
     for (var i=0; i < texto.length; i=i+1){
-        
+        //considerar q le suma la cantidad de letras de la clave para q el indice//
+        //salte la cadena convertida //
         if(texto[i] =="a"){
             textoFinal = textoFinal + "a";
             i=i+1;

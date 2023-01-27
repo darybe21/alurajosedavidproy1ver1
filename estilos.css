@@ -96,15 +96,13 @@ section{
     margin-left: 30px;
     width: 328px;
     font-size: 23px; 
-
-
-
 }
-
+/*aqui se agrega la ubicacion de los botones encriptar/desencriptar*/
 .btn-encriptar,.btn-desencriptar{
     width: 25%;
     height: 40px;
 }
+/* caracteristicas de texto de los botones */
 .contenedor-botones{
     text-align: center;
     margin-top: 50px;
@@ -118,32 +116,38 @@ section{
     box-sizing: border-box;
     overflow: hidden;
 }
+/*area de la section 2 donde figrua el muñeco y los msg*/
 .contenedor-muneico{
     width: 100%;
     height: 60%;
     padding-top: 28px;
     /*box-sizing: border-box;*/
 }
+/*area para msg Ningun msg fue encontrado*/
 .contenedor-h3{
     width: 100%;
     height: 20%;
     text-align: center;
 }
+/*area para msg Ingresa el texto q deseas...*/
 .contenedor-parrafo{
     width: 100%;
     height: 20%;
     text-align: center;
 }
+/* area donde aparece la palabra convertida**/
 .contenedor-resultado{
     width: 100%;
     height: 70%;
     padding: 25px;
     box-sizing: border-box;
 }
+/*area para boton copiar */
 .contenedor-copiar{
     width: 100%;
     height: 20%;
 }
+/*caracteristicas del boton copiar*/
 .btn-copiar{
     border: 1px solid #0A3871;
     border-radius: 24px;
